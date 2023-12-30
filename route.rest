@@ -1,0 +1,28 @@
+
+
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/658f3c9c6e117e0cae0d0c17
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+ {
+    "name": "amazingPerson", 
+    "subscribedToChannel": "Adi's YT Channel"
+ }
+
+###
+
+DELETE http://localhost:3000/subscribers/658f3d2b761c44d501b45d73
+
+
+###
+PATCH http://localhost:3000/subscribers/658fa654b3d07322c24d3cf3
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
